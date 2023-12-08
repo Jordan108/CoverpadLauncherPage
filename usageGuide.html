@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Guide</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="navbar_tittle">
+            <img width="64" src="img/CoverPadIcon.png" alt="Cover Pad Icon">
+             <h1 style="text-align:left">Cover Pad Launcher</h1>
+        </div>
+        <div id="navbar_link">
+            <!-- <a href="download.html">Descargar</a> -->
+            <a href="index.html">Inicio</a>
+            <a href="faqs.html">Preguntas frecuentes</a>
+            <a href="usageGuide.html" class="link_active">Manual de uso</a>
+        </div>
+    </nav>
+
+    <div class="container heightContent">
+        <ul class="content_index">
+            <h1>Tabla de contenido</h1>
+            <li><a href="#Elements">Elementos</a></li>
+            <ul>
+                <li><a href="#Create_elements">Crear elementos</a></li>
+                <li><a href="#CreateMultipleElements">Crear múltiples elementos</a></li>
+                <li><a href="#ScannedsElements">Elementos "escaneados"</a></li>
+            </ul>
+            <li><a href="#Collections">Colecciones</a></li>
+            <li><a href="#OnlineCovers">Caratulas online</a></li>
+            <li><a href="#Edit">Editar</a></li>
+            <li><a href="#Delete">Eliminar</a></li>
+            <li><a href="#Fav">Favoritos</a></li>
+            <li><a href="#Resolutions">Resoluciones</a></li>
+            <li><a href="#Tags">Etiquetas</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <!-- Elementos -->
+        <section class="guideText">
+            <!-- Elementos y crear elementos -->
+            <div>
+                <h1 id="Elements">Elementos</h1>
+                <p>Los elementos son lo que te permitirá ejecutar los archivos de tu computadora o las URL de internet, lo que te dara la flexibilidad de agregar juegos, películas, documentos, he incluso enlazar páginas web entre otros..</p>
+                <br>
+                <h2 id="Create_elements">Como crear elementos</h2>
+                <p>Para crear elementos tienes 2 opciones, la primera es agregarlos individualmente haciendo click derecho sobre el fondo y seleccionando la opción “Crear elemento”, esto abrirá una nueva ventana que te permitirá personalizar el elemento a agregar:</p>
+            </div>
+            
+            <div class="flexContainer">
+                <div>
+                    <img src="img/CreateElements.png" alt="Crear elementos">
+                </div>
+                <div class="guideImageDescription">
+                    <p><b>Nombre elemento: </b>Nombre que tendrá tu elemento y se verá en la cuadricula, este nombre no afecta la dirección o la ruta del archivo/url que agregues.</p>
+                    <p><b>Favorito: </b>Identificara si el elemento que vas a crear se agregara a la sección de favoritos</p>
+                    <p><b>Padre del elemento: </b>Identificara a que colección pertenece ese elemento</p>
+                    <p><b>Utilizar una URL: </b>permite que puedas agregar una url en el apartado inferior en vez de una ruta de un archivo, lo que te permitirá agregar una dirección de una página web o un juego de steam (por dar un ejemplo).</p>
+                    <p><b>Ruta del archivo: </b>Aquí podrás agregar el archivo (o la url) la cual se ejecutará, tienes la opción de escribirlo de forma manual o puedes buscarlo en tu sistema al apretar el botón Examinar...</p>
+                    <p><b>Ruta del lanzador: </b>Aquí puedes definir (de manera opcional) cual será el programa que ejecutará el archivo que enlazaste, por ejemplo, si tienes un video .mp4 y quieres ejecutarlo con un reproductor especifico, puedes agregarlo alli (si esta vacío, el archivo se ejecutara con el programa por defecto establecido en el sistema, el equivalente al hacer un doble click sobre el).</p>
+                    <p><b>Parámetros de lanzamiento: </b>Algunos programas pueden permitir (o deben) ser ejecutados con líneas de comando, aquí tu podrás agregarlos.</p>
+                    <p><b>Resolución: </b>Aquí podrás seleccionar alguna de las <a href="">resoluciones que creaste</a>, o si, en ese momento no creaste ninguna, podrás apretar el botón “Añadir” para crear alguna en ese momento (para más información respecto a la función de las resoluciones, revisar su apartado)..</p>
+                    <p><b>Tamaño en pixeles: </b>Aquí podrás ajustar tanto el ancho como el alto de la caratula que tendrás a la derecha de esta sección (por defecto, al no tener ninguna caratula, será un cuadrado en negro), además, también puedes cambiar el tamaño de la caratula con el mouse al acercarlo a los bordes de la caratula.</p>
+                    <p><b>Formato de la imagen: </b>Aquí puedes definir el formato de la imagen con respecto a la cuadricula, donde “Mantener escala” mantiene la relación de aspecto original y se adapta a la cuadricula, y donde “Estirar” hace que la imagen se estire y se adapte por completo al tamaño de rectángulo.</p>
+                    <p><b>Seleccionar caratula: </b>Donde podrás elegir una imagen que tengas guardada en tu computadora para utilizarla como caratula (esta imagen se copiara a la carpeta Covers que esta dentro de System en la raíz del programa, por lo que no se utilizara el archivo original y podrás modificarlo).</p>
+                    <p><b>Buscar caratula online: </b>Aquí podrás seleccionar una API para poder buscar una caratula de lo que estes agregando (para más información, revisa el apartado <a href="">“Caratulas online”</a>).</p>
+                    <p><b>Borrar caratula: </b>Limpia la imagen que estará en el rectángulo de caratulas, por lo que no guardará la imagen seleccionada en la carpeta Covers al momento de presionar “Guardar” (Sirve en caso de que te arrepientas y no quieras utilizar una caratula para tu elemento).</p>
+                    <p><b>Color de fondo: </b>Donde podrás elegir un color para los espacios que no cubran la caratula (en caso de haber seleccionado una), o, en caso de no querer un color, podrás seleccionar “Fondo transparente”.</p>
+                    <p><b>Apartado de etiqueta: </b>Donde podrás elegir una etiqueta que se relacionara con el elemento clickeando la cuadricula de la columna “Añadir” de la respectiva etiqueta mencionada a la derecha (Para más información respecto al uso de las etiquetas, revisar el apartado de <a href="">“Etiquetas”</a>).</p>
+                </div>
+            </div>
+            <!-- Crear multiples elementos -->
+            <div>
+                <h2 id="CreateMultipleElements">Crear múltiples elementos</h2>
+                <p>Aquí tu podrás crear varios elementos a la vez seleccionando los archivos desde tu computadora apretando el botón “Añadir archivos”.</p>
+                <p>Este apartado aunque parezca muy diferente, tiene bastantes similitudes con el apartado anterior, por lo que aquí solo mencionaremos sus diferencias.</p>
+            </div>
+            <div class="flexContainer">
+                <div class="guideImageDescription">
+                    <p><b>Colección de los elementos: </b>Cumple la misma función que el apartado “Padre del elemento” al <a href="">crear un nuevo elemento</a>.</p>
+                    <p><b>Resolución global: </b>Al igual que en el apartado de <a href="">crear un nuevo elemento</a>, aquí tu podrás seleccionar una resolución que hayas creado o crear una en ese momento apretando en “Añadir” ubicado justo abajo. Si ya tenías una resolución seleccionada, al momento de agregar un nuevo archivo a la tabla esta tendrá esta resolución por defecto, y si quieres cambiar la resolución para todos los elementos, basta con seleccionar otra resolución de la lista y apretar en el botón “Establecer”.</p>
+                    <p><b>Formato de imagen global: </b>Donde podrás seleccionar los formatos de imagen que tendrán los elementos de las filas, y utilizando el botón “Establecer” podrás cambiar este formato de todos los elementos a la vez.</p>
+                    <p><b>Ruta del lanzador global: </b>Al hacer click en la cuadricula se abrirá una pestaña en la cual podrás elegir el archivo que funcionará como lanzador de los elementos, utilizando el botón “Establecer” podrás establecer el lanzador seleccionado en todos los elementos, y con el botón “Borrar” podrás eliminar este de la cuadricula.</p>
+                    <p><b>Parámetro de lanzamiento global: </b>Al igual que los apartados anteriores, con el botón “Establecer” podrás establecer el parámetro que hayas escrito en la cuadricula de arriba para todos los elementos en la tabla.</p>
+                </div>
+                <div>
+                    <img src="img/CreateMultipleElements.png" alt="Crear múltiples elementos">
+                </div>
+            </div>
+            <!-- Elementos escaneados -->
+            <div>
+                <h2 id="ScannedsElements">Elementos escaneados</h2>
+                <p>Los elementos escaneados son los elementos que se encontraran localmente en tu equipo en la carpeta que se selecciono para escanear en el apartado de <a href="">colecciones</a>, a diferencia de los elementos normales, estos funcionan directamente desde tu equipo, por si realizas un cambio de los archivos en la carpeta escaneada, los elementos que se encontraran también cambiaran al momento de que revises de nuevo esa colección.</p>
+                <p>Podrás cambiar los ajustes y las características de esos elementos al darle a editar, y al momento de guardarlo, se utilizara como identificación la ruta de ese archivo, por lo que si en tu equipo cambias la localización o el nombre de ese archivo, tanto la configuración como las imágenes que hayas establecido se perderán.</p>
+            </div>
+        </section>
+        <!-- Colecciones -->
+        <br>
+        <section class="guideText">
+            <h1 id="Collections">Colecciones</h1>
+        </section>
+        <!-- Caratulas Online -->
+        <section class="guideText">
+            <h1 id="OnlineCovers">Caratulas online</h1>
+        </section>
+        <!-- Editar -->
+        <section class="guideText">
+            <h1 id="Edit">Editar</h1>
+        </section>
+        <!-- Eliminar -->
+        <section class="guideText">
+            <h1 id="Delete">Eliminar</h1>
+        </section>
+        <!-- Favoritos -->
+        <section class="guideText">
+            <h1 id="Fav">Favoritos</h1>
+        </section>
+        <!-- Resoluciones -->
+        <section class="guideText">
+            <h1 id="Resolutions">Resoluciones</h1>
+        </section>
+        <!-- Etiquetas -->
+        <section class="guideText">
+            <h1 id="Tags">Etiquetas</h1>
+        </section>
+    </div>
+    
+</body>
+</html>

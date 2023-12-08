@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Coverpad Launcher</title>
 </head>
 <body>
     <nav class="navbar">
         <div id="navbar_tittle">
-            <img width="64" src="img/favicon.png">
-             <h1 style="text-align:left">Coverpad Launcher</h1>
+            <img width="64" src="img/CoverPadIcon.png" alt="Cover Pad Icon">
+             <h1 style="text-align:left">Cover Pad Launcher</h1>
         </div>
         <div id="navbar_link">
-            <a href="#download">Descargar</a>
-            <a href="#qa">Preguntas frecuentes</a>
-            <a href="#guide">Guia rapida</a>
+            <!-- <a href="download.html">Descargar</a> -->
+            <a href="index.html" class="link_active">Inicio</a>
+            <a href="faqs.html">Preguntas frecuentes</a>
+            <a href="usageGuide.html">Manual de uso</a>
         </div>
     </nav>
     
+    <div class="container">
+        <!-- Carrusel de imagenes -->
+        <div class="slider">
+            <ul>
+                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
+                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
+                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
+                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
+          </ul>
+        </div>
+        <!-- Descripcion de la aplicacion + botones de descarga/source code -->
+        <div class="description">
+            <h2>Cover Pad Launcher</h2>
+            <p>Cover Pad Launcher es un software que te permite crear y organizar tu propia biblioteca multimedia, pudiendo agregar juegos, videos, documentos o básicamente cualquier tipo de archivo, e inclusive, podrás adjuntar enlaces web, pudiendo así tener todo en un solo lugar.</p>
+            <div class="bottomDiv">
+                <a class="ButtonParent" href="https://github.com/Jordan108/cSharpLauncher/releases/download/0.9.1/Cover.Pad.Launcher.0.9.1.zip"><span>Descargar</span></a>
+                <a class="ButtonParent" href="https://github.com/Jordan108/cSharpLauncher"><span>Codigo fuente</span></a>
+            </div>
+        </div>
+        <!-- Descripciones legales como las apis que se utilizan etc etc -->
+        <div>
+
+        </div>
+    </div>
 </body>
+
 </html>

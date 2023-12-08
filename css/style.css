@@ -1,21 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 body{
     margin: 0;
     padding: 0;
+    background-color: #5e697b;/*  #24282f; */
+    height: 100%;
+    width: 100%;
 }
+
+html{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/*#region Navbar*/
 .navbar{
     width: 100%;
     height: 20%;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
+
     background: #171D25;
     padding:  0;
     margin: 0;
     top: 0;
     left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+#navbar_tittle img{
+    margin: 10px;
+}
+
+#navbar_tittle{
+    display: flex;
+    align-items: center;
+    width: 30%;
 }
 
 #navbar_tittle h1{
-    color: #FFF;
     font-family: Inter;
     font-size: 25px;
     font-style: normal;
@@ -24,14 +53,198 @@ body{
 }
 
 #navbar_link{
-    
+    width: 70%;
 }
 
 #navbar_link a{
-    color: #FFF;
+    color: white;
+
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    text-decoration: none;
+    margin: 0 15px;
 }
+
+#navbar_link a:hover {
+    color: #5e697b;
+}
+
+#navbar_link .link_active {
+    color: #24282f;
+}
+/*#endregion*/
+
+/*#region Botones*/
+.ButtonParent {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:3px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:bold;
+	padding:11px 13px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+
+    bottom: 5px;
+
+    margin-left: 10px;
+}
+.ButtonParent:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.ButtonParent:active {
+	position:relative;
+	top:1px;
+}
+
+.bottomDiv{
+    bottom: 5px;
+    position: absolute;
+}
+/*#endregion RegionName*/
+
+.container{
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos a los extremos */
+    align-items: center; /* Centrar verticalmente los elementos */
+
+    background-color: #24282f; 
+
+    padding: 2%;
+
+    height: 40vh;
+    width: 97.05%;
+}
+
+/*#region Pagina principal*/
+.description{
+    margin: 5%;
+    width: 65%;
+    height: 100%;
+    
+    color: white;
+
+    font-family: Inter;
+
+    position: relative;
+}
+
+/*Slider*/
+.slider{
+    background-color: red;
+    width: 20%;
+    height: auto;
+    margin: 5%; /* auto 0; */
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes slide{
+    /*Calcular dependiendo de la cantidad de imagenes*/
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    40%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+/*#endregion*/
+
+/*#region Manual de uso*/
+.heightContent{
+    height: fit-content;
+}
+
+.content_index{
+    color: white;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+
+
+.content_index a{
+    text-decoration:none;
+    color: white;
+}
+
+.content_index a:hover{
+    color: #5e697b;
+}
+
+.guideText{
+    color: white;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+
+    
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos a los extremos */
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.flexContainer img{
+    width: 40vw;
+    height: auto;
+
+    border-radius: 5px;
+}
+
+.guideImageDescription{
+    align-self: flex-start;
+}
+/*#endregion*/
+
+/*Responsividad*/
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+      align-items: flex-start; /* Alinear elementos a la izquierda */
+    }
+
+    /*.imagen {
+      order: -1; /* Cambiar el orden para que la imagen aparezca primero en la columna
+    }*/
+  }
