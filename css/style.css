@@ -193,8 +193,6 @@ html{
     font-weight: 700;
 }
 
-
-
 .content_index a{
     text-decoration:none;
     color: white;
@@ -215,8 +213,6 @@ html{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 1%;
-
-    
 }
 
 .flexContainer{
@@ -234,6 +230,10 @@ html{
 
 .guideImageDescription{
     align-self: flex-start;
+}
+
+.centerIMG{
+    text-align: center;
 }
 /*#endregion*/
 
