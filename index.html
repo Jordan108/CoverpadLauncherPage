@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fuente de los iconos en los botones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Coverpad Launcher</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div id="navbar_tittle">
+    <header class="HeaderContainer">
+        <div id="HeaderTittle">
             <img width="64" src="img/CoverPadIcon.png" alt="Cover Pad Icon">
              <h1 style="text-align:left">Cover Pad Launcher</h1>
         </div>
-        <div id="navbar_link">
+        <div id="HeaderLink">
             <!-- <a href="download.html">Descargar</a> -->
             <a href="index.html" class="link_active">Inicio</a>
-            <a href="faqs.html">Preguntas frecuentes</a>
+            <!-- <a href="faqs.html">Preguntas frecuentes</a> -->
             <a href="usageGuide.html">Manual de uso</a>
         </div>
-    </nav>
-    
-    <div class="container">
-        <!-- Carrusel de imagenes -->
-        <div class="slider">
-            <ul>
-                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
-                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
-                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
-                <li><img src="img/CoverPadIcon.png" alt="Imagen 1"/></li>
-          </ul>
-        </div>
-        <!-- Descripcion de la aplicacion + botones de descarga/source code -->
-        <div class="description">
-            <h2>Cover Pad Launcher</h2>
-            <p>Cover Pad Launcher es un software que te permite crear y organizar tu propia biblioteca multimedia, pudiendo agregar juegos, videos, documentos o básicamente cualquier tipo de archivo, e inclusive, podrás adjuntar enlaces web, pudiendo así tener todo en un solo lugar.</p>
-            <div class="bottomDiv">
-                <a class="ButtonParent" href="https://github.com/Jordan108/cSharpLauncher/releases/download/0.9.1/Cover.Pad.Launcher.0.9.1.zip"><span>Descargar</span></a>
-                <a class="ButtonParent" href="https://github.com/Jordan108/cSharpLauncher"><span>Codigo fuente</span></a>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Carrusel de imagenes -->
+            <div class="slider">
+                <ul>
+                    <li><img src="img/CPL3ds.png" alt="Imagen 1"/></li>
+                    <li><img src="img/CPLPC.png" alt="Imagen 2"/></li>
+                    <li><img src="img/CPLPeliculas.png" alt="Imagen 3"/></li>
+                    <li><img src="img/CPLSeries.png" alt="Imagen 4"/></li>
+            </ul>
+            </div>
+            <!-- Descripcion de la aplicacion + botones de descarga/source code -->
+            <div class="description">
+                <h2>Cover Pad Launcher</h2>
+                <p>Cover Pad Launcher es un software que te permite crear y organizar tu propia biblioteca multimedia, pudiendo agregar juegos, videos, documentos o básicamente cualquier tipo de archivo, e inclusive, podrás adjuntar enlaces web, pudiendo así tener todo en un solo lugar.</p>
+                <div class="bottomDiv">
+                    <a class="DownloadButton" href="https://github.com/Jordan108/cSharpLauncher/releases/download/0.9.1/Cover.Pad.Launcher.0.9.1.zip"><i class="fa fa-download"></i><span> Descargar</span></a>
+                    <a class="SourceButton" href="https://github.com/Jordan108/cSharpLauncher"><i class="fa fa-github"></i><span> Codigo fuente</span></a>
+                </div>
+            </div>
+            <!-- Descripciones legales como las apis que se utilizan etc etc -->
+            <div>
+
             </div>
         </div>
-        <!-- Descripciones legales como las apis que se utilizan etc etc -->
-        <div>
-
-        </div>
-    </div>
+    </main>
 </body>
 
 </html>

@@ -1,24 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-body{
+html, body{
     margin: 0;
     padding: 0;
     background-color: #5e697b;/*  #24282f; */
     height: 100%;
     width: 100%;
+    overflow-x: hidden; 
 }
 
-html{
+/* html{
     margin: 0;
     padding: 0;
     max-width: 100%;
+} */
+
+.ColorDark{
+    background: #24282f;
 }
 
-/*#region Navbar*/
-.navbar{
+
+.ContentWidth{
+    max-width: 80%;
+   /*  margin-left: 5%; */
+}
+/*#region Header*/
+.HeaderContainer{
     width: 100%;
-    height: 20%;
+    /* height: 20%; */
     /*flex-shrink: 0;*/
 
     background: #171D25;
@@ -34,17 +44,17 @@ html{
     padding: 10px;
 }
 
-#navbar_tittle img{
+#HeaderTittle img{
     margin: 10px;
 }
 
-#navbar_tittle{
+#HeaderTittle{
     display: flex;
     align-items: center;
     width: 30%;
 }
 
-#navbar_tittle h1{
+#HeaderTittle h1{
     font-family: Inter;
     font-size: 25px;
     font-style: normal;
@@ -52,11 +62,11 @@ html{
     line-height: normal;
 }
 
-#navbar_link{
+#HeaderLink{
     width: 70%;
 }
 
-#navbar_link a{
+#HeaderLink a{
     color: white;
 
     font-family: Inter;
@@ -69,22 +79,26 @@ html{
     margin: 0 15px;
 }
 
-#navbar_link a:hover {
+#HeaderLink a:hover {
     color: #5e697b;
 }
 
-#navbar_link .link_active {
+#HeaderLink .link_active {
     color: #24282f;
 }
 /*#endregion*/
 
 /*#region Botones*/
-.ButtonParent {
-	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	background-color:#768d87;
+/* .ButtonParent:active {
+	position:relative;
+	top:1px;
+} */
+
+.DownloadButton{
+    box-shadow:inset 0px 1px 3px 0px #a6cbff;
+	background-color:#3075d8;
 	border-radius:5px;
-	border:3px solid #566963;
+	border:3px solid #013989;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -93,26 +107,38 @@ html{
 	font-weight:bold;
 	padding:11px 13px;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
-
     bottom: 5px;
-
     margin-left: 10px;
 }
-.ButtonParent:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
+.DownloadButton:hover {
+	background-color:#3889fe;
 }
-.ButtonParent:active {
-	position:relative;
-	top:1px;
+
+.SourceButton{
+    box-shadow:inset 0px 1px 3px 0px #b23fd7;
+	background-color:#8631a7;
+	border-radius:5px;
+	border:3px solid #622c8f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:bold;
+	padding:11px 13px;
+	text-decoration:none;
+    bottom: 5px;
+    margin-left: 10px;
+}
+.SourceButton:hover {
+	background-color:#a43ccd;
 }
 
 .bottomDiv{
     bottom: 5px;
     position: absolute;
 }
-/*#endregion RegionName*/
+/*#endregion*/
 
 .container{
     display: flex;
@@ -128,6 +154,20 @@ html{
 }
 
 /*#region Pagina principal*/
+
+/*#region Navbar*/
+nav{
+    --top-offset: 0px;
+    left: 0;
+    position: sticky;
+    min-width: 350px;
+    /* padding: 20px 0px 20px 20px; */
+    top: var(--top-offset);
+    height: calc(100dvh - var(--top-offset));
+    background-color: #5e697b;
+}
+/*#endregion*/
+
 .description{
     margin: 5%;
     width: 65%;
@@ -142,8 +182,8 @@ html{
 
 /*Slider*/
 .slider{
-    background-color: red;
-    width: 20%;
+   /*  background-color: red; */
+    width: 40%;
     height: auto;
     margin: 5%; /* auto 0; */
     overflow: hidden;
@@ -163,7 +203,11 @@ html{
 }
 
 .slider img{
-    width: 100%;
+    max-height:100%; 
+    max-width:100%;
+    object-fit: contain;
+    /* width: 100%;
+    height: auto; */
 }
 
 @keyframes slide{
@@ -199,7 +243,7 @@ html{
 }
 
 .content_index a:hover{
-    color: #5e697b;
+    color: #171D25;
 }
 
 .guideText{
@@ -213,6 +257,8 @@ html{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 1%;
+
+    text-wrap: wrap;
 }
 
 .flexContainer{
@@ -235,16 +281,59 @@ html{
 .centerIMG{
     text-align: center;
 }
+.centerIMG img{
+    width: 60vw;
+}
 /*#endregion*/
 
 /*Responsividad*/
+@media (max-width: 1350px) {
+    /* las imagenes del manual de uso deben estar arriba del texto */
+    .flexContainer{
+        display: block;
+    }
+
+    .guideText{
+        text-wrap: balance;
+    }
+    .ContentWidth {
+        max-width: 70%;
+    }
+    nav{
+        min-width: 300px;
+    }
+}
+@media (max-width: 992px) {
+    /* el indice del manual de uso debe ocultarse */
+    nav{
+        display: none;
+    }
+
+    .guideText{
+        text-wrap: wrap;
+    }
+    .ContentWidth {
+        max-width: 90%;
+    }
+}
+
 @media (max-width: 600px) {
+    /* Index */
+    .slider{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .description {
+        width: 90%;
+        height: 100%;
+    }
+
+    /* Manual de uso */
     .container {
       flex-direction: column; /* Cambiar la dirección del flexbox a columna */
       align-items: flex-start; /* Alinear elementos a la izquierda */
     }
-
-    /*.imagen {
-      order: -1; /* Cambiar el orden para que la imagen aparezca primero en la columna
-    }*/
-  }
+}

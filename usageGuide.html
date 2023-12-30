@@ -7,229 +7,276 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Guide</title>
 </head>
-<body>
-    <nav class="navbar">
-        <div id="navbar_tittle">
+<body class="ColorDark">
+    <header class="HeaderContainer">
+        <div id="HeaderTittle">
             <img width="64" src="img/CoverPadIcon.png" alt="Cover Pad Icon">
             <h1 style="text-align:left">Cover Pad Launcher</h1>
         </div>
-        <div id="navbar_link">
+        <div id="HeaderLink">
             <!-- <a href="download.html">Descargar</a> -->
             <a href="index.html">Inicio</a>
-            <a href="faqs.html">Preguntas frecuentes</a>
+            <!-- <a href="faqs.html">Preguntas frecuentes</a> -->
             <a href="usageGuide.html" class="link_active">Manual de uso</a>
         </div>
-    </nav>
-
-    <div class="container heightContent">
-        <ul class="content_index">
-            <h1>Tabla de contenido</h1>
-            <li><a href="#Elements">Elementos</a></li>
-            <ul>
-                <li><a href="#Create_elements">Crear elementos</a></li>
-                <li><a href="#CreateMultipleElements">Crear múltiples elementos</a></li>
-                <li><a href="#ScannedsElements">Elementos "escaneados"</a></li>
-            </ul>
-            <li><a href="#Collections">Colecciones</a></li>
-            <ul>
-                <li><a href="#Create_Collections">Como crear colecciones</a></li>
-                <li><a href="#Config_Collection_p1">Configurar colección, parte 1</a></li>
-                <li><a href="#Config_Collection_p2">Configurar colección, parte 2</a></li>
-            </ul>
-            <li><a href="#OnlineCovers">Caratulas online</a></li>
-            <ul>
-                <li><a href="#WhatIsAPI">¿Qué es una API?</a></li>
-                <li><a href="#ChooseAPI">Que API elegir</a></li>
-                <li><a href="#ChooseName">Que nombre buscar</a></li>
-                <li><a href="#ChooseCover">¿Qué es una API?</a></li>
-            </ul>
-            <li><a href="#Edit">Editar</a></li>
-            <ul>
-                <li><a href="#EditMultipleElements">Editar múltiples  elementos</a></li>
-            </ul>
-            <li><a href="#Delete">Eliminar</a></li>
-            <li><a href="#Fav">Favoritos</a></li>
-            <li><a href="#Resolutions">Resoluciones</a></li>
-            <li><a href="#Tags">Etiquetas</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <!-- Elementos -->
-        <section class="guideText">
-            <!-- Elementos y crear elementos -->
-            <div>
-                <h1 id="Elements">Elementos</h1>
-                <p>Los elementos son lo que te permitirá ejecutar los archivos de tu computadora o las URL de internet, lo que te dara la flexibilidad de agregar juegos, películas, documentos, he incluso enlazar páginas web entre otros..</p>
-                <br>
-                <h2 id="Create_elements">Como crear elementos</h2>
-                <p>Para crear elementos tienes 2 opciones, la primera es agregarlos individualmente haciendo click derecho sobre el fondo y seleccionando la opción “Crear elemento”, esto abrirá una nueva ventana que te permitirá personalizar el elemento a agregar:</p>
-            </div>
-            
-            <div class="flexContainer">
-                <div>
-                    <img src="img/CreateElements.png" alt="Crear elementos">
-                </div>
-                <div class="guideImageDescription">
-                    <p><b>Nombre elemento: </b>Nombre que tendrá tu elemento y se verá en la cuadricula, este nombre no afecta la dirección o la ruta del archivo/url que agregues.</p>
-                    <p><b>Favorito: </b>Identificara si el elemento que vas a crear se agregara a la sección de favoritos.</p>
-                    <p><b>Padre del elemento: </b>Identificara a que colección pertenece ese elemento.</p>
-                    <p><b>Utilizar una URL: </b>permite que puedas agregar una url en el apartado inferior en vez de una ruta de un archivo, lo que te permitirá agregar una dirección de una página web o un juego de steam (por dar un ejemplo).</p>
-                    <p><b>Ruta del archivo: </b>Aquí podrás agregar el archivo (o la url) la cual se ejecutará, tienes la opción de escribirlo de forma manual o puedes buscarlo en tu sistema al apretar el botón Examinar...</p>
-                    <p><b>Ruta del lanzador: </b>Aquí puedes definir (de manera opcional) cual será el programa que ejecutará el archivo que enlazaste, por ejemplo, si tienes un video .mp4 y quieres ejecutarlo con un reproductor especifico, puedes agregarlo alli (si esta vacío, el archivo se ejecutara con el programa por defecto establecido en el sistema, el equivalente al hacer un doble click sobre el).</p>
-                    <p><b>Parámetros de lanzamiento: </b>Algunos programas pueden permitir (o deben) ser ejecutados con líneas de comando, aquí tu podrás agregarlos.</p>
-                    <p><b>Resolución: </b>Aquí podrás seleccionar alguna de las <a href="#Resolutions">resoluciones que creaste</a>, o si, en ese momento no creaste ninguna, podrás apretar el botón “Añadir” para crear alguna en ese momento (para más información respecto a la función de las resoluciones, revisar el apartado de <a href="#Resolutions">Resoluciones</a>).</p>
-                    <p><b>Tamaño en pixeles: </b>Aquí podrás ajustar tanto el ancho como el alto de la caratula que tendrás a la derecha de esta sección (por defecto, al no tener ninguna caratula, será un cuadrado en negro), además, también puedes cambiar el tamaño de la caratula con el mouse al acercarlo a los bordes de la caratula.</p>
-                    <p><b>Formato de la imagen: </b>Aquí puedes definir el formato de la imagen con respecto a la cuadricula, donde “Mantener escala” mantiene la relación de aspecto original y se adapta a la cuadricula, y donde “Estirar” hace que la imagen se estire y se adapte por completo al tamaño de rectángulo.</p>
-                    <p><b>Seleccionar caratula: </b>Donde podrás elegir una imagen que tengas guardada en tu computadora para utilizarla como caratula (esta imagen se copiara a la carpeta Covers que esta dentro de System en la raíz del programa, por lo que no se utilizara el archivo original y podrás modificarlo).</p>
-                    <p><b>Buscar caratula online: </b>Aquí podrás seleccionar una API para poder buscar una caratula de lo que estes agregando (para más información, revisa el apartado <a href="#OnlineCovers">“Caratulas online”</a>).</p>
-                    <p><b>Borrar caratula: </b>Limpia la imagen que estará en el rectángulo de caratulas, por lo que no guardará la imagen seleccionada en la carpeta Covers al momento de presionar “Guardar” (Sirve en caso de que te arrepientas y no quieras utilizar una caratula para tu elemento).</p>
-                    <p><b>Color de fondo: </b>Donde podrás elegir un color para los espacios que no cubran la caratula (en caso de haber seleccionado una), o, en caso de no querer un color, podrás seleccionar “Fondo transparente”.</p>
-                    <p><b>Apartado de etiqueta: </b>Donde podrás elegir una etiqueta que se relacionara con el elemento clickeando la cuadricula de la columna “Añadir” de la respectiva etiqueta mencionada a la derecha (Para más información respecto al uso de las etiquetas, revisar el apartado de <a href="#Tags">“Etiquetas”</a>).</p>
-                </div>
-            </div>
-            <!-- Crear multiples elementos -->
-            <div>
-                <h2 id="CreateMultipleElements">Crear múltiples elementos</h2>
-                <p>Esta es tu segunda opción para crear elementos, pero en este caso aquí tu podrás crear varios elementos a la vez seleccionando los archivos desde tu computadora apretando el botón “Añadir archivos”.</p>
-                <p>Este apartado aunque parezca muy diferente, tiene bastantes similitudes con el apartado anterior, por lo que aquí solo mencionaremos sus diferencias.</p>
-            </div>
-            <div class="flexContainer">
-                <div class="guideImageDescription">
-                    <p><b>Colección de los elementos: </b>Cumple la misma función que el apartado “Padre del elemento” al <a href="#Create_elements">crear un nuevo elemento</a>.</p>
-                    <p><b>Resolución global: </b>Al igual que en el apartado de <a href="#Create_elements">crear un nuevo elemento</a>, aquí tu podrás seleccionar una resolución que hayas creado o crear una en ese momento apretando en “Añadir” ubicado justo abajo. Si ya tenías una resolución seleccionada, al momento de agregar un nuevo archivo a la tabla esta tendrá esta resolución por defecto, y si quieres cambiar la resolución para todos los elementos, basta con seleccionar otra resolución de la lista y apretar en el botón “Establecer”.</p>
-                    <p><b>Formato de imagen global: </b>Donde podrás seleccionar los formatos de imagen que tendrán los elementos de las filas, y utilizando el botón “Establecer” podrás cambiar este formato de todos los elementos a la vez.</p>
-                    <p><b>Ruta del lanzador global: </b>Al hacer click en la cuadricula se abrirá una pestaña en la cual podrás elegir el archivo que funcionará como lanzador de los elementos, utilizando el botón “Establecer” podrás establecer el lanzador seleccionado en todos los elementos, y con el botón “Borrar” podrás eliminar este de la cuadricula.</p>
-                    <p><b>Parámetro de lanzamiento global: </b>Al igual que los apartados anteriores, con el botón “Establecer” podrás establecer el parámetro que hayas escrito en la cuadricula de arriba para todos los elementos en la tabla.</p>
-                </div>
-                <div>
-                    <img src="img/CreateMultipleElements.png" alt="Crear múltiples elementos">
-                </div>
-            </div>
-            <!-- Elementos escaneados -->
-            <div>
-                <h2 id="ScannedsElements">Elementos escaneados</h2>
-                <p>Los elementos escaneados son los elementos que se encontraran localmente en tu equipo en la carpeta que se selecciono para escanear en el apartado de <a href="Collections">colecciones</a>, a diferencia de los elementos normales, estos funcionan directamente desde tu equipo, por si realizas un cambio de los archivos en la carpeta escaneada, los elementos que se encontraran también cambiaran al momento de que revises de nuevo esa colección.</p>
-                <p>Podrás cambiar los ajustes y las características de esos elementos al darle a editar, y al momento de guardarlo, se utilizara como identificación la ruta de ese archivo, por lo que si en tu equipo cambias la localización o el nombre de ese archivo, tanto la configuración como las imágenes que hayas establecido se perderán.</p>
-            </div>
-        </section>
-        <!-- Colecciones -->
-        <br>
-        <section class="guideText">
-            <div>
-                <h1 id="Collections">Colecciones</h1>
-                <p>Las colecciones son como las carpetas de Windows, cumpliendo la función de ayudarte a organizar tus elementos y otras colecciones, y, al igual que los elementos, se les puede agregar una caratula (de la misma forma en la que puedes hacerlos con los elementos), a su vez, las colecciones tienen otras funciones que se irán detallando más adelante.</p>
-                <br>
-                <h2 id="Create_Collections">Como crear colecciones</h2>
-                <p>Para crear una colección, puedes hacerlo haciendo click derecho sobre el fondo y seleccionando la opción “Crear colección, esto abrirá una nueva ventana que te permitirá configurar la colección a crear:</p>
-                <p>Cuando intentes crear una colección por primera vez, te darás cuenta de que tiene bastantes apartados y puede llegar a ser agobiante si no sabes para que sirve cada uno, por lo que, para facilitar su enseñanza, dividiremos esta guía en 2 partes como se ve a continuación: </p>
-                <div class="centerIMG">
-                    <img  src="img/CreateCollectionDivision.png" alt="Vista completa">
-                </div>
-            </div>
-            <!-- Primera seccion -->
-            <div>
-                <h2 id="Config_Collection_p1">Configurar colección, parte 1</h2>
-                <p>En la sección de la izquierda, podrás establecer las configuraciones que afectaran de forma directa a esta misma colección:</p>
-            </div>
-            <div class="flexContainer">
-                <div>
-                    <img src="img/CreateCollectionA.png" alt="Crear colección parte A">
-                </div>
-                <div class="guideImageDescription">
-                    <p><b>Nombre colección: </b>Nombre que tendrá tu colección y se verá en la cuadricula, este nombre no afecta el redireccionamiento de los archivos, por lo que si cambias el nombre de tu colección, el contenido de este no se perderá.</p>
-                    <p><b>Favorito: </b>Identificara si la colección que vas a crear se agregara a la sección de favoritos.</p>
-                    <p><b>Colección padre: </b>Identificara a que colección pertenece esta colección (en caso de que este dentro de otra colección).</p>
-                    <p><b>Apartado de etiqueta: </b>Aquí podrás realizar 2 acciones, la primera es agregarle a esta colección una etiqueta para poder filtrarlo más adelante haciendo click en la cuadricula de la columna “Añadir” de la respectiva etiqueta mencionada al centro en la columna “Etiqueta”, y, como segunda función, podrás hacer click sobre la cuadricula de la columna “Escanear” para que todos los elementos y colecciones que contengan esa etiqueta (al haber hecho click en “Añadir”) aparezcan dentro de esta colección (Para más información respecto al uso de las etiquetas, revisar el apartado de “Etiquetas”).</p>
-                    <p><b>Resolución colección: </b>Aquí podrás seleccionar alguna de las resoluciones que creaste, o si, en ese momento no creaste ninguna, podrás apretar el botón “Añadir” para crear alguna en ese momento (para más información respecto a la función de las resoluciones, revisar el apartado de Resoluciones).</p>
-                    <p><b>Tamaño en pixeles: </b>Aquí podrás ajustar tanto el ancho como el alto de la caratula que tendrás a la derecha de esta sección (por defecto, al no tener ninguna caratula, será un cuadrado en negro), además, también puedes cambiar el tamaño de la caratula con el mouse al acercarlo a los bordes de la caratula.</p>
-                    <p><b>Formato de la imagen: </b>Aquí puedes definir el formato de la imagen con respecto a la cuadricula, donde “Mantener escala” mantiene la relación de aspecto original y se adapta a la cuadricula, y donde “Estirar” hace que la imagen se estire y se adapte por completo al tamaño de rectángulo.</p>
-                    <p><b>Seleccionar caratula: </b>Donde podrás elegir una imagen que tengas guardada en tu computadora para utilizarla como caratula (esta imagen se copiara a la carpeta Covers que esta dentro de System en la raíz del programa, por lo que no se utilizara el archivo original y podrás modificarlo).</p>
-                    <p><b>Buscar caratula online: </b>Aquí podrás seleccionar una API para poder buscar una caratula de lo que estes agregando (para más información, revisa el apartado de <a href="#OnlineCovers">Caratulas online</a>).</p>
-                    <p><b>Borrar caratula: </b>Limpia la imagen que estará en el rectángulo de caratulas, por lo que no guardará la imagen seleccionada en la carpeta Covers al momento de presionar “Guardar” (Sirve en caso de que te arrepientas y no quieras utilizar una caratula para tu elemento).</p>
-                    <p><b>Color de fondo: </b>Donde podrás elegir un color para los espacios que no cubran la caratula (en caso de haber seleccionado una), o, en caso de no querer un color, podrás seleccionar “Fondo transparente”.</p>
-                </div>
-            </div>
-            <!-- Segunda seccion -->
-            <div>
-                <h2 id="Config_Collection_p2">Configurar colección, parte 2</h2>
-                <p>Ahora que ya repasamos la primera sección de la colección, hablaremos sobre la segunda (la que está en la derecha), la cual tiene como función cambiar el como se comportara el contenido dentro de esta colección (siendo contenido, los elementos y colecciones que tengan como padre a esta misma colección)</p>
-            </div>
-            <div class="flexContainer">
-                <div class="guideImageDescription">
-                    <p><b>Escanear directorio: </b>Aquí tu podrás establecer la ruta que utilizara la colección para agregar los archivos de manera automática (Revisar apartado de Elementos escaneados para mas información), para hacer esto, primero debes hacer click en la cuadricula a la izquierda del texto “Escanear un directorio” y luego darle al botón “Examinar…” para buscar la carpeta que quieras establecer (o podrías escribir la dirección de esta carpeta directamente en su respectivo rectángulo), en caso de que en un futuro no quieras que esta colección escanee un directorio, solo basta con desactivar la cuadricula que activaste con anterioridad.</p>
-                    <p><b>Ejecutar archivo n°: </b>Este apartado tiene una función muy particular, la cual es poder abrir directamente un archivo que este dentro de una carpeta escaneada con la función de “Escanear directorio”, siempre y cuando esa carpeta escaneada no contenga dentro otra carpeta escaneada, el número que establezcas corresponderá con el orden del archivo dentro de la carpeta (si se establece en 0, esta función quedara desactivada), para poner un ejemplo, supongamos que escaneaste el directorio de “Imágenes” de tu computadora, dentro de ella tienes otra carpeta llamada “Fotos” la cual contiene 3 archivos: A.png, B.png y C.png, si estableces “Ejecutar archivo n°” en 1, al hacer click sobre el elemento escaneado “Fotos” te abrirá directamente el archivo A.png, en cambio, si estableces el numero 2 o 3 te abrirá el archivo B.png y C.png respectivamente, o si, estableces un numero negativo como -1, abrirá los archivos en un orden inverso, en el caso de -1, abriéndote C.png (si dejas Ejecutar archivo n° en 0, se te mostraran estos 3 archivos como elementos).</p>
-                    <p><b>Extensión: </b>Tiene relación con el apartado anterior, y tiene como función el filtrarte los archivos que podrás ejecutar y ver, mostrándote solo los elementos escaneados que tengan las extensiones que hayas establecido (estableciendo las extensiones sin “.”, véase “.exe” lo debes escribir como “exe”), en caso de la función “Ejecutar archivo n°”, al momento de abrir una carpeta escaneada, solo se ejecutaran los archivos que estén dentro de las extensiones que estableciste.</p>
-                    <p><b>Seleccionar caratula y Borrar caratula: </b>En este apartado, solo tienen como objetivo que tengas una referencia visual al momento de establecer la resolución del contenido, su formato de imagen o su tamaño en pixeles, por lo que la imagen que establezcas no se guardara y no funcionara como una caratula “por defecto” para los elementos que crees.</p>
-                    <br>
-                    <p>Los siguientes apartados sirven para definir qué características tendrá un elemento por defecto al momento de crearlo (véase, dentro de esta colección, cuando selecciones “Crear elemento”, este elemento tendrá por defecto establecido lo que hayas puesto en los siguientes apartados).</p>
+    </header>
+    <div style="display: flex;">
+        <nav>
+            <!-- <div> --><!-- container heightContent -->
+                <ul class="content_index">
+                    <h1>índice</h1>
+                    <li><a href="#Elements">Elementos</a></li>
                     <ul>
-                        <li>Ruta del lanzador del contenido</li>
-                        <li>Parámetros de lanzamiento de contenido</li>
-                        <li>Resolución del contenido</li>
-                        <li>Tamaño en pixeles</li>
-                        <li>Formato de la imagen</li>
+                        <li><a href="#Create_elements">Crear elementos</a></li>
+                        <li><a href="#CreateMultipleElements">Crear múltiples elementos</a></li>
+                        <li><a href="#ScannedsElements">Elementos "escaneados"</a></li>
                     </ul>
-                </div>
-                <div>
-                    <img src="img/CreateCollectionB.png" alt="Crear colección parte B">
-                </div>
+                    <li><a href="#Collections">Colecciones</a></li>
+                    <ul>
+                        <li><a href="#Create_Collections">Como crear colecciones</a></li>
+                        <li><a href="#Config_Collection_p1">Configurar colección, parte 1</a></li>
+                        <li><a href="#Config_Collection_p2">Configurar colección, parte 2</a></li>
+                    </ul>
+                    <li><a href="#OnlineCovers">Caratulas online</a></li>
+                    <ul>
+                        <li><a href="#WhatIsAPI">¿Qué es una API?</a></li>
+                        <li><a href="#ChooseAPI">Que API elegir</a></li>
+                        <li><a href="#ChooseName">Que nombre buscar</a></li>
+                        <li><a href="#ChooseCover">¿Qué es una API?</a></li>
+                    </ul>
+                    <li><a href="#Edit">Editar</a></li>
+                    <ul>
+                        <li><a href="#EditMultipleElements">Editar múltiples  elementos</a></li>
+                    </ul>
+                    <li><a href="#Delete">Eliminar</a></li>
+                    <li><a href="#Fav">Favoritos</a></li>
+                    <li><a href="#Resolutions">Resoluciones</a></li>
+                    <ul>
+                        <li><a href="#CreateResolutions">Crear y modificar resoluciones</a></li>
+                    </ul>
+                    <li><a href="#Tags">Etiquetas</a></li>
+                    <ul>
+                        <li><a href="#CreateTags">Crear y modificar etiquetas</a></li>
+                    </ul>
+                </ul>
+            <!-- </div> -->
+        </nav>
+        <main class="ColorDark ContentWidth">
+            <div class="ColorDark">
+                <!-- Elementos -->
+                <section class="guideText">
+                    <!-- Elementos y crear elementos -->
+                    <div>
+                        <h1 id="Elements">Elementos</h1>
+                        <p>Los elementos son lo que te permitirá ejecutar los archivos de tu computadora o las URL de internet, lo que te dara la flexibilidad de agregar juegos, películas, documentos, he incluso enlazar páginas web entre otros..</p>
+                        <br>
+                        <h2 id="Create_elements">Como crear elementos</h2>
+                        <p>Para crear elementos tienes 2 opciones, la primera es agregarlos individualmente haciendo click derecho sobre el fondo y seleccionando la opción “Crear elemento”, esto abrirá una nueva ventana que te permitirá personalizar el elemento a agregar:</p>
+                    </div>
+                    
+                    <div class="flexContainer">
+                        <div>
+                            <img src="img/CreateElements.png" alt="Crear elementos">
+                        </div>
+                        <div class="guideImageDescription">
+                            <p><b>Nombre elemento: </b>Nombre que tendrá tu elemento y se verá en la cuadricula, este nombre no afecta la dirección o la ruta del archivo/url que agregues.</p>
+                            <p><b>Favorito: </b>Identificara si el elemento que vas a crear se agregara a la sección de favoritos.</p>
+                            <p><b>Padre del elemento: </b>Identificara a que colección pertenece ese elemento.</p>
+                            <p><b>Utilizar una URL: </b>permite que puedas agregar una url en el apartado inferior en vez de una ruta de un archivo, lo que te permitirá agregar una dirección de una página web o un juego de steam (por dar un ejemplo).</p>
+                            <p><b>Ruta del archivo: </b>Aquí podrás agregar el archivo (o la url) la cual se ejecutará, tienes la opción de escribirlo de forma manual o puedes buscarlo en tu sistema al apretar el botón Examinar...</p>
+                            <p><b>Ruta del lanzador: </b>Aquí puedes definir (de manera opcional) cual será el programa que ejecutará el archivo que enlazaste, por ejemplo, si tienes un video .mp4 y quieres ejecutarlo con un reproductor especifico, puedes agregarlo alli (si esta vacío, el archivo se ejecutara con el programa por defecto establecido en el sistema, el equivalente al hacer un doble click sobre el).</p>
+                            <p><b>Parámetros de lanzamiento: </b>Algunos programas pueden permitir (o deben) ser ejecutados con líneas de comando, aquí tu podrás agregarlos.</p>
+                            <p><b>Resolución: </b>Aquí podrás seleccionar alguna de las <a href="#Resolutions">resoluciones que creaste</a>, o si, en ese momento no creaste ninguna, podrás apretar el botón “Añadir” para crear alguna en ese momento (para más información respecto a la función de las resoluciones, revisar el apartado de <a href="#Resolutions">Resoluciones</a>).</p>
+                            <p><b>Tamaño en pixeles: </b>Aquí podrás ajustar tanto el ancho como el alto de la caratula que tendrás a la derecha de esta sección (por defecto, al no tener ninguna caratula, será un cuadrado en negro), además, también puedes cambiar el tamaño de la caratula con el mouse al acercarlo a los bordes de la caratula.</p>
+                            <p><b>Formato de la imagen: </b>Aquí puedes definir el formato de la imagen con respecto a la cuadricula, donde “Mantener escala” mantiene la relación de aspecto original y se adapta a la cuadricula, y donde “Estirar” hace que la imagen se estire y se adapte por completo al tamaño de rectángulo.</p>
+                            <p><b>Seleccionar caratula: </b>Donde podrás elegir una imagen que tengas guardada en tu computadora para utilizarla como caratula (esta imagen se copiara a la carpeta Covers que esta dentro de System en la raíz del programa, por lo que no se utilizara el archivo original y podrás modificarlo).</p>
+                            <p><b>Buscar caratula online: </b>Aquí podrás seleccionar una API para poder buscar una caratula de lo que estes agregando (para más información, revisa el apartado <a href="#OnlineCovers">“Caratulas online”</a>).</p>
+                            <p><b>Borrar caratula: </b>Limpia la imagen que estará en el rectángulo de caratulas, por lo que no guardará la imagen seleccionada en la carpeta Covers al momento de presionar “Guardar” (Sirve en caso de que te arrepientas y no quieras utilizar una caratula para tu elemento).</p>
+                            <p><b>Color de fondo: </b>Donde podrás elegir un color para los espacios que no cubran la caratula (en caso de haber seleccionado una), o, en caso de no querer un color, podrás seleccionar “Fondo transparente”.</p>
+                            <p><b>Apartado de etiqueta: </b>Donde podrás elegir una etiqueta que se relacionara con el elemento clickeando la cuadricula de la columna “Añadir” de la respectiva etiqueta mencionada a la derecha (Para más información respecto al uso de las etiquetas, revisar el apartado de <a href="#Tags">“Etiquetas”</a>).</p>
+                        </div>
+                    </div>
+                    <!-- Crear multiples elementos -->
+                    <div>
+                        <h2 id="CreateMultipleElements">Crear múltiples elementos</h2>
+                        <p>Esta es tu segunda opción para crear elementos, pero en este caso aquí tu podrás crear varios elementos a la vez seleccionando los archivos desde tu computadora apretando el botón “Añadir archivos”.</p>
+                        <p>Este apartado aunque parezca muy diferente, tiene bastantes similitudes con el apartado anterior, por lo que aquí solo mencionaremos sus diferencias.</p>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="guideImageDescription">
+                            <p><b>Colección de los elementos: </b>Cumple la misma función que el apartado “Padre del elemento” al <a href="#Create_elements">crear un nuevo elemento</a>.</p>
+                            <p><b>Resolución global: </b>Al igual que en el apartado de <a href="#Create_elements">crear un nuevo elemento</a>, aquí tu podrás seleccionar una resolución que hayas creado o crear una en ese momento apretando en “Añadir” ubicado justo abajo. Si ya tenías una resolución seleccionada, al momento de agregar un nuevo archivo a la tabla esta tendrá esta resolución por defecto, y si quieres cambiar la resolución para todos los elementos, basta con seleccionar otra resolución de la lista y apretar en el botón “Establecer”.</p>
+                            <p><b>Formato de imagen global: </b>Donde podrás seleccionar los formatos de imagen que tendrán los elementos de las filas, y utilizando el botón “Establecer” podrás cambiar este formato de todos los elementos a la vez.</p>
+                            <p><b>Ruta del lanzador global: </b>Al hacer click en la cuadricula se abrirá una pestaña en la cual podrás elegir el archivo que funcionará como lanzador de los elementos, utilizando el botón “Establecer” podrás establecer el lanzador seleccionado en todos los elementos, y con el botón “Borrar” podrás eliminar este de la cuadricula.</p>
+                            <p><b>Parámetro de lanzamiento global: </b>Al igual que los apartados anteriores, con el botón “Establecer” podrás establecer el parámetro que hayas escrito en la cuadricula de arriba para todos los elementos en la tabla.</p>
+                        </div>
+                        <div>
+                            <img src="img/CreateMultipleElements.png" alt="Crear múltiples elementos">
+                        </div>
+                    </div>
+                    <!-- Elementos escaneados -->
+                    <div>
+                        <h2 id="ScannedsElements">Elementos escaneados</h2>
+                        <p>Los elementos escaneados son los elementos que se encontraran localmente en tu equipo en la carpeta que se selecciono para escanear en el apartado de <a href="Collections">colecciones</a>, a diferencia de los elementos normales, estos funcionan directamente desde tu equipo, por si realizas un cambio de los archivos en la carpeta escaneada, los elementos que se encontraran también cambiaran al momento de que revises de nuevo esa colección.</p>
+                        <p>Podrás cambiar los ajustes y las características de esos elementos al darle a editar, y al momento de guardarlo, se utilizara como identificación la ruta de ese archivo, por lo que si en tu equipo cambias la localización o el nombre de ese archivo, tanto la configuración como las imágenes que hayas establecido se perderán.</p>
+                    </div>
+                </section>
+                <!-- Colecciones -->
+                <br>
+                <section class="guideText">
+                    <div>
+                        <h1 id="Collections">Colecciones</h1>
+                        <p>Las colecciones son como las carpetas de Windows, cumpliendo la función de ayudarte a organizar tus elementos y otras colecciones, y, al igual que los elementos, se les puede agregar una caratula (de la misma forma en la que puedes hacerlos con los elementos), a su vez, las colecciones tienen otras funciones que se irán detallando más adelante.</p>
+                        <br>
+                        <h2 id="Create_Collections">Como crear colecciones</h2>
+                        <p>Para crear una colección, puedes hacerlo haciendo click derecho sobre el fondo y seleccionando la opción “Crear colección, esto abrirá una nueva ventana que te permitirá configurar la colección a crear:</p>
+                        <p>Cuando intentes crear una colección por primera vez, te darás cuenta de que tiene bastantes apartados y puede llegar a ser agobiante si no sabes para que sirve cada uno, por lo que, para facilitar su enseñanza, dividiremos esta guía en 2 partes como se ve a continuación: </p>
+                        <div class="centerIMG">
+                            <img  src="img/CreateCollectionDivision.png" alt="Vista completa">
+                        </div>
+                    </div>
+                    <!-- Primera seccion -->
+                    <div>
+                        <h2 id="Config_Collection_p1">Configurar colección, parte 1</h2>
+                        <p>En la sección de la izquierda, podrás establecer las configuraciones que afectaran de forma directa a esta misma colección:</p>
+                    </div>
+                    <div class="flexContainer">
+                        <div>
+                            <img src="img/CreateCollectionA.png" alt="Crear colección parte A">
+                        </div>
+                        <div class="guideImageDescription">
+                            <p><b>Nombre colección: </b>Nombre que tendrá tu colección y se verá en la cuadricula, este nombre no afecta el redireccionamiento de los archivos, por lo que si cambias el nombre de tu colección, el contenido de este no se perderá.</p>
+                            <p><b>Favorito: </b>Identificara si la colección que vas a crear se agregara a la sección de favoritos.</p>
+                            <p><b>Colección padre: </b>Identificara a que colección pertenece esta colección (en caso de que este dentro de otra colección).</p>
+                            <p><b>Apartado de etiqueta: </b>Aquí podrás realizar 2 acciones, la primera es agregarle a esta colección una etiqueta para poder filtrarlo más adelante haciendo click en la cuadricula de la columna “Añadir” de la respectiva etiqueta mencionada al centro en la columna “Etiqueta”, y, como segunda función, podrás hacer click sobre la cuadricula de la columna “Escanear” para que todos los elementos y colecciones que contengan esa etiqueta (al haber hecho click en “Añadir”) aparezcan dentro de esta colección (Para más información respecto al uso de las etiquetas, revisar el apartado de “Etiquetas”).</p>
+                            <p><b>Resolución colección: </b>Aquí podrás seleccionar alguna de las resoluciones que creaste, o si, en ese momento no creaste ninguna, podrás apretar el botón “Añadir” para crear alguna en ese momento (para más información respecto a la función de las resoluciones, revisar el apartado de Resoluciones).</p>
+                            <p><b>Tamaño en pixeles: </b>Aquí podrás ajustar tanto el ancho como el alto de la caratula que tendrás a la derecha de esta sección (por defecto, al no tener ninguna caratula, será un cuadrado en negro), además, también puedes cambiar el tamaño de la caratula con el mouse al acercarlo a los bordes de la caratula.</p>
+                            <p><b>Formato de la imagen: </b>Aquí puedes definir el formato de la imagen con respecto a la cuadricula, donde “Mantener escala” mantiene la relación de aspecto original y se adapta a la cuadricula, y donde “Estirar” hace que la imagen se estire y se adapte por completo al tamaño de rectángulo.</p>
+                            <p><b>Seleccionar caratula: </b>Donde podrás elegir una imagen que tengas guardada en tu computadora para utilizarla como caratula (esta imagen se copiara a la carpeta Covers que esta dentro de System en la raíz del programa, por lo que no se utilizara el archivo original y podrás modificarlo).</p>
+                            <p><b>Buscar caratula online: </b>Aquí podrás seleccionar una API para poder buscar una caratula de lo que estes agregando (para más información, revisa el apartado de <a href="#OnlineCovers">Caratulas online</a>).</p>
+                            <p><b>Borrar caratula: </b>Limpia la imagen que estará en el rectángulo de caratulas, por lo que no guardará la imagen seleccionada en la carpeta Covers al momento de presionar “Guardar” (Sirve en caso de que te arrepientas y no quieras utilizar una caratula para tu elemento).</p>
+                            <p><b>Color de fondo: </b>Donde podrás elegir un color para los espacios que no cubran la caratula (en caso de haber seleccionado una), o, en caso de no querer un color, podrás seleccionar “Fondo transparente”.</p>
+                        </div>
+                    </div>
+                    <!-- Segunda seccion -->
+                    <div>
+                        <h2 id="Config_Collection_p2">Configurar colección, parte 2</h2>
+                        <p>Ahora que ya repasamos la primera sección de la colección, hablaremos sobre la segunda (la que está en la derecha), la cual tiene como función cambiar el como se comportara el contenido dentro de esta colección (siendo contenido, los elementos y colecciones que tengan como padre a esta misma colección)</p>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="guideImageDescription">
+                            <p><b>Escanear directorio: </b>Aquí tu podrás establecer la ruta que utilizara la colección para agregar los archivos de manera automática (Revisar apartado de Elementos escaneados para mas información), para hacer esto, primero debes hacer click en la cuadricula a la izquierda del texto “Escanear un directorio” y luego darle al botón “Examinar…” para buscar la carpeta que quieras establecer (o podrías escribir la dirección de esta carpeta directamente en su respectivo rectángulo), en caso de que en un futuro no quieras que esta colección escanee un directorio, solo basta con desactivar la cuadricula que activaste con anterioridad.</p>
+                            <p><b>Ejecutar archivo n°: </b>Este apartado tiene una función muy particular, la cual es poder abrir directamente un archivo que este dentro de una carpeta escaneada con la función de “Escanear directorio”, siempre y cuando esa carpeta escaneada no contenga dentro otra carpeta escaneada, el número que establezcas corresponderá con el orden del archivo dentro de la carpeta (si se establece en 0, esta función quedara desactivada), para poner un ejemplo, supongamos que escaneaste el directorio de “Imágenes” de tu computadora, dentro de ella tienes otra carpeta llamada “Fotos” la cual contiene 3 archivos: A.png, B.png y C.png, si estableces “Ejecutar archivo n°” en 1, al hacer click sobre el elemento escaneado “Fotos” te abrirá directamente el archivo A.png, en cambio, si estableces el numero 2 o 3 te abrirá el archivo B.png y C.png respectivamente, o si, estableces un numero negativo como -1, abrirá los archivos en un orden inverso, en el caso de -1, abriéndote C.png (si dejas Ejecutar archivo n° en 0, se te mostraran estos 3 archivos como elementos).</p>
+                            <p><b>Extensión: </b>Tiene relación con el apartado anterior, y tiene como función el filtrarte los archivos que podrás ejecutar y ver, mostrándote solo los elementos escaneados que tengan las extensiones que hayas establecido (estableciendo las extensiones sin “.”, véase “.exe” lo debes escribir como “exe”), en caso de la función “Ejecutar archivo n°”, al momento de abrir una carpeta escaneada, solo se ejecutaran los archivos que estén dentro de las extensiones que estableciste.</p>
+                            <p><b>Seleccionar caratula y Borrar caratula: </b>En este apartado, solo tienen como objetivo que tengas una referencia visual al momento de establecer la resolución del contenido, su formato de imagen o su tamaño en pixeles, por lo que la imagen que establezcas no se guardara y no funcionara como una caratula “por defecto” para los elementos que crees.</p>
+                            <br>
+                            <p>Los siguientes apartados sirven para definir qué características tendrá un elemento por defecto al momento de crearlo (véase, dentro de esta colección, cuando selecciones “Crear elemento”, este elemento tendrá por defecto establecido lo que hayas puesto en los siguientes apartados).</p>
+                            <ul>
+                                <li>Ruta del lanzador del contenido</li>
+                                <li>Parámetros de lanzamiento de contenido</li>
+                                <li>Resolución del contenido</li>
+                                <li>Tamaño en pixeles</li>
+                                <li>Formato de la imagen</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/CreateCollectionB.png" alt="Crear colección parte B">
+                        </div>
+                    </div>
+                </section>
+                <!-- Caratulas Online -->
+                <br>
+                <section class="guideText">
+                    <h1 id="OnlineCovers">Caratulas online</h1>
+                    <p>Cuando presiones el botón “Buscar caratula online” tanto al crear un elemento o una colección, se abrirá una ventana, la cual esta dividida en varias secciones o pasos, los cuales te enseñaremos a ocupar uno a uno.</p>
+                    <h2 id="WhatIsAPI">Prologo, ¿Qué es una API?</h2>
+                    <p>Para resumir y ponerlo en el contexto de este software, la API es lo que permite a Cover Pad Launcher comunicarse con bases de datos externas para poder buscar caratulas, el proveedor de la API respectiva aparece en la parte superior izquierda de la ventana, y va cambiando a medida que vas eligiendo que tipo de caratula quieres buscar.</p>
+                    <h2 id="ChooseAPI">Primera parte - Que API elegir</h2>
+                    <p>Lo primero que te encontraras será un listado con varias categorías, a la cual deberás elegir de que es lo que quieres descargar, el motivo por el cual debes especificar la categoría es que cada una utiliza una API con caratulas diferentes, por lo tanto, es lo ideal elegir la categoría correcta.</p>
+                    <p>El proveedor de cada API Listada será listado a continuación:</p>
+                    <ul>
+                        <li>Juegos - <a href="https://www.steamgriddb.com">SteamGridDB.com</a></li>
+                        <li>Películas y series - <a href="https://www.themoviedb.org">TheMovieDB.org</a></li>
+                        <li>Mangas - <a href="https://mangadex.org">MangaDex.org</a></li>
+                        <li>Comics - <a href="https://comicvine.gamespot.com">Comicvine.gamespot.com</a></li>
+                        <li>Libros - <a href="https://openlibrary.org">OpenLibrary.org</a></li>
+                    </ul>
+                    <div class="centerIMG"><img src="img/OnlineCoverChooseAPI.png" alt="Elegir una API"></div>
+                    <h2 id="ChooseName">Segunda parte - Que nombre buscar</h2>
+                    <p>Después de seleccionar la categoría, te encontraras una tabla con 2 columnas, “Nombre a buscar” y “Ruta”, en nombre a buscar tu podrás cambiar en ese momento el nombre de que es lo que estas buscando, ya que idealmente, deberás dejarlo con el nombre mas exacto posible, siguiendo la imagen de ejemplo, si estas buscando una caratula para la serie “Hora de Aventura” lo ideal es que ocupes ese nombre en vez de un acrónimo como podría ser “HDA” o algún nombre que hayas puesto tu. La segunda columna (Ruta) solo tiene como función que sirva como referencia al momento de que cambies el nombre (no se puede modificar la ruta).</p>
+                    <div class="centerIMG"><img src="img/OnlineCoverChangeName.png" alt="Elegir una API"></div>
+                    <p>Cuando presiones el botón “Continuar”, aparecerá una barra a la izquierda del botón que te mostrará el progreso de la búsqueda.</p>
+                    <h2 id="ChooseCover">Tercera parte - Elegir caratula</h2>
+                    <p>Cuando termine la búsqueda, aparecerá una ventana que contiene varios elementos, el primer elemento es una tabla que contiene 3 columnas, “Nombre” es simplemente el nombre del elemento al que le buscaste caratulas, “Encontrados” que muestra la cantidad de caratulas que se encontraron, y “Elegido”, que muestra cual es la caratula que se tiene seleccionada actualmente por cada elemento y la cual será la que se descargara y guardara localmente.</p>
+                    <p>El siguiente elemento es la caratula elegida en su formato original, y por último, los botones “<” y “>” que te servirán para navegar entre las caratulas encontradas.</p>
+                    <p>Para elegir una caratula solo tienes que presionar “<” o “>” para ir navegando entre las caratulas encontradas hasta que encuentres una que te guste. Si tienes mas de un elemento en la tabla, basta con seleccionar su nombre en la tabla para elegir una caratula para ese elemento, la caratula elegida de los otros elementos se mantendrán.</p>
+                    <div class="centerIMG"><img src="img/OnlineCoverChooseCover.png" alt="Elegir una API"></div>
+                    <p>Para terminar el proceso solo bastara con apretar el botón “Finalizar”, lo que te llevara a la ventana principal donde podrás observar la caratula elegida.</p>
+                </section>
+                <!-- Editar -->
+                <br>
+                <section class="guideText">
+                    <h1 id="Edit">Editar</h1>
+                    <p>Después de crear una colección o un elemento, si te equivocaste en algo puedes editarlo simplemente haciendo click derecho sobre el y presionando el botón “Editar”, esto te abrirá la misma ventana que te apareció al crear un elemento o una colección, pero ahora con la función de editar. Para terminar de editar solo tienes que presionar en el botón “Guardar” y los cambios estarán hechos.</p>
+                    <h2 id="EditMultipleElements">Editar múltiples  elementos</h2>
+                    <p>Al igual que existe la función de crear múltiples elementos, también tienes la opción de hacer lo mismo, el cual se accede de una manera diferente a como se editan los elementos normalmente, en este caso, para acceder a el, solo tienes que hacer click derecho sobre el fondo donde están los elementos (como si fueras a crear un elemento o una colección), y apretar la opción “Editar todos los elementos de la colección”, esto te llevara a la ventana para crear múltiples elementos, pero esta vez, para editar los elementos actuales de la colección donde estas parado (Esta función solo sirve para editar elementos, si dentro de la colección existían otras colecciones, no podrán ser editadas aqui). Para terminar, al igual que la función de editar elementos o colecciones, solo tienes que presionar en el botón “Guardar” y los cambios estarán hechos.</p>
+                </section>
+                <!-- Eliminar -->
+                <br>
+                <section class="guideText">
+                    <h1 id="Delete">Eliminar</h1>
+                    <p>Para eliminar un elemento o una colección basta con hacer click derecho sobre el y hacer click en “Eliminar”, esto, además de eliminar el elemento de manera permanente, también eliminara la caratula que se encuentra dentro de la carpeta “Covers”, y, si estas eliminando una colección, también eliminara los elementos y las colecciones que se encuentren dentro de ella (Cabe aclarar, que eliminar un elemento que hará referencia a un archivo de tu computadora NO lo eliminara, solo eliminara los datos del elemento dentro del software).</p>
+                </section>
+                <!-- Favoritos -->
+                <br>
+                <section class="guideText">
+                    <h1 id="Fav">Favoritos</h1>
+                    <p>Los elementos o colecciones que tengas como favorito aparecerán dentro de la sección de favoritos al ir a ella utilizando el panel de navegación. Para agregar o quitar un elemento o una colección de favoritos basta con hacer click derecho sobre el y presionar en “Agregar a favoritos” o “Quitar de favoritos” dependiendo de lo que se requiera.</p>
+                </section>
+                <!-- Resoluciones -->
+                <br>
+                <section class="guideText">
+                    <div>
+                        <h1 id="Resolutions">Resoluciones</h1>
+                        <p>Las resoluciones te permiten mantener un orden con respecto al tamaño de las caratulas, puesto que todas las caratulas que tengan cierta resolución mantendrán el tamaño especificado, además, si cambias el tamaño de la resolución, todas las caratulas que la tengan seleccionada cambiaran y tendrán ese tamaño, ahorrándote bastante tiempo al no tener que ir una a una cambiando el tamaño.</p>
+                        <h2 id="CreateResolutions">Crear y modificar resoluciones</h2>
+                        <p>Para crear una resolución tienes 2 maneras, la primera es apretando el botón “Añadir” que esta al lado del listado de resoluciones al crear un nuevo elemento o una nueva colección, y la otras es hacer click en la barra de herramientas la opción “Vista” y dentro de ella “Administrar resoluciones”, ambas opciones te llevaran a la misma ventana.</p>
+                        <p>Esta ventana es la que te permitirá crear y modificar las resoluciones, donde sus funciones se detallaran a continuación:</p>
+                    </div>
+                    <div class="flexContainer">
+                        <div>
+                            <img src="img/Resolutions.png" alt="Resoluciones">
+                        </div>
+                        <div class="guideImageDescription">
+                            <p><b>Añadir: </b>Creara una nueva resolución agregando una fila en la tabla inferior (con un nombre vacío y con un tamaño por defecto de 200x200).</p>
+                            <p><b>Eliminar: </b>Eliminara la resolución que tengas seleccionada en la tabla inferior (Los elementos y colecciones que tengan esta resolución la perderán para siempre).</p>
+                            <p><b>Tabla de resoluciones: </b>Esta tabla tiene 3 columnas, “Nombre”, “Ancho” y “Alto”, con los cuales podrás editar las resoluciones que hayas creado con el botón “Añadir”, haciendo doble click sobre la resolución en la fila elegida de la tabla, además, debes tener en cuenta que cambiar el nombre de la resolución NO hará que los elementos que la ocupen la pierdan, por lo que podrás cambiar el nombre de la resolución con total libertad.</p>
+                            <p><b>Seleccionar caratula de prueba: </b>Con esto podrás elegir una imagen desde tu PC y ocuparla como referencia al momento de ajustar y crear tus resoluciones (Ten en cuenta de que esta caratula no será guardada junto a la resolución, solo te sirve como referencia temporal).</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Etiquetas -->
+                <br>
+                <section class="guideText">
+                    <div>
+                        <h1 id="Tags">Etiquetas</h1>
+                        <p>Las etiquetas te permiten etiquetar (valga la redundancia) tus elementos y colecciones para así poder organizarlos y buscarlos más fácilmente, por lo que tienen principalmente 2 funciones importantes, la primera es que te permite añadirlos automáticamente dentro de una colección (para mas información, revisar <a href="#Collections">Colecciones</a>), y como segunda función es, que, buscando el nombre de la etiqueta en la barra de búsqueda, los elementos y colecciones que las tengan aparecerán.</p>
+                        <h2 id="CreateTags">Crear y modificar etiquetas</h2>
+                        <p>Para abrir la ventana de las etiquetas y poder crearlas debes hacer click en la opción de “Vista” y luego en “Administrar etiquetas”, lo que te llevara a la siguiente ventana en al cual se detallaran sus funciones a continuación:</p>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="guideImageDescription">
+                            <p><b>Añadir etiqueta: </b>Esto creara una nueva etiqueta y agregara una nueva fila en la tabla de la izquierda utilizando el nombre que hayas puesto en el rectángulo justo a la derecha del botón.</p>
+                            <p><b>Eliminar etiqueta: </b>Eliminara la etiqueta que tengas seleccionada de la tabla a la izquierda (Los elementos y colecciones que tengan esta etiqueta la perderán de forma permanente).</p>
+                            <p><b>Tabla de etiquetas: </b>Aquí podrás ver todas las etiquetas que hayas creado y podrás modificar su nombre haciendo doble click sobre la etiqueta en la tabla (Modificar el nombre de la etiqueta NO hará que los elementos y colecciones con esa etiqueta la pierdan, por lo que eres libre de modificar el nombre con total libertad).</p>
+                        </div>
+                        <div>
+                            <img src="img/Tags.png" alt="Etiquetas">
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- Caratulas Online -->
-        <section class="guideText">
-            <h1 id="OnlineCovers">Caratulas online</h1>
-            <p>Cuando presiones el botón “Buscar caratula online” tanto al crear un elemento o una colección, se abrirá una ventana, la cual esta dividida en varias secciones o pasos, los cuales te enseñaremos a ocupar uno a uno.</p>
-            <h2 id="WhatIsAPI">Prologo, ¿Qué es una API?</h2>
-            <p>Para resumir y ponerlo en el contexto de este software, la API es lo que permite a Cover Pad Launcher comunicarse con bases de datos externas para poder buscar caratulas, el proveedor de la API respectiva aparece en la parte superior izquierda de la ventana, y va cambiando a medida que vas eligiendo que tipo de caratula quieres buscar.</p>
-            <h2 id="ChooseAPI">Primera parte - Que API elegir</h2>
-            <p>Lo primero que te encontraras será un listado con varias categorías, a la cual deberás elegir de que es lo que quieres descargar, el motivo por el cual debes especificar la categoría es que cada una utiliza una API con caratulas diferentes, por lo tanto, es lo ideal elegir la categoría correcta.</p>
-            <p>El proveedor de cada API Listada será listado a continuación:</p>
-            <ul>
-                <li>Juegos - <a href="https://www.steamgriddb.com">SteamGridDB.com</a></li>
-                <li>Películas y series - <a href="https://www.themoviedb.org">TheMovieDB.org</a></li>
-                <li>Mangas - <a href="https://mangadex.org">MangaDex.org</a></li>
-                <li>Comics - <a href="https://comicvine.gamespot.com">Comicvine.gamespot.com</a></li>
-                <li>Libros - <a href="https://openlibrary.org">OpenLibrary.org</a></li>
-            </ul>
-            <div class="centerIMG"><img src="img/OnlineCoverChooseAPI.png" alt="Elegir una API"></div>
-            <h2 id="ChooseName">Segunda parte - Que nombre buscar</h2>
-            <p>Después de seleccionar la categoría, te encontraras una tabla con 2 columnas, “Nombre a buscar” y “Ruta”, en nombre a buscar tu podrás cambiar en ese momento el nombre de que es lo que estas buscando, ya que idealmente, deberás dejarlo con el nombre mas exacto posible, siguiendo la imagen de ejemplo, si estas buscando una caratula para la serie “Hora de Aventura” lo ideal es que ocupes ese nombre en vez de un acrónimo como podría ser “HDA” o algún nombre que hayas puesto tu. La segunda columna (Ruta) solo tiene como función que sirva como referencia al momento de que cambies el nombre (no se puede modificar la ruta).</p>
-            <div class="centerIMG"><img src="img/OnlineCoverChangeName.png" alt="Elegir una API"></div>
-            <p>Cuando presiones el botón “Continuar”, aparecerá una barra a la izquierda del botón que te mostrará el progreso de la búsqueda.</p>
-            <h2 id="ChooseCover">Tercera parte - Elegir caratula</h2>
-            <p>Cuando termine la búsqueda, aparecerá una ventana que contiene varios elementos, el primer elemento es una tabla que contiene 3 columnas, “Nombre” es simplemente el nombre del elemento al que le buscaste caratulas, “Encontrados” que muestra la cantidad de caratulas que se encontraron, y “Elegido”, que muestra cual es la caratula que se tiene seleccionada actualmente por cada elemento y la cual será la que se descargara y guardara localmente.</p>
-            <p>El siguiente elemento es la caratula elegida en su formato original, y por último, los botones “<” y “>” que te servirán para navegar entre las caratulas encontradas.</p>
-            <p>Para elegir una caratula solo tienes que presionar “<” o “>” para ir navegando entre las caratulas encontradas hasta que encuentres una que te guste. Si tienes mas de un elemento en la tabla, basta con seleccionar su nombre en la tabla para elegir una caratula para ese elemento, la caratula elegida de los otros elementos se mantendrán.</p>
-            <div class="centerIMG"><img src="img/OnlineCoverChooseCover.png" alt="Elegir una API"></div>
-            <p>Para terminar el proceso solo bastara con apretar el botón “Finalizar”, lo que te llevara a la ventana principal donde podrás observar la caratula elegida.</p>
-        </section>
-        <!-- Editar -->
-        <section class="guideText">
-            <h1 id="Edit">Editar</h1>
-            <p>Después de crear una colección o un elemento, si te equivocaste en algo puedes editarlo simplemente haciendo click derecho sobre el y presionando el botón “Editar”, esto te abrirá la misma ventana que te apareció al crear un elemento o una colección, pero ahora con la función de editar. Para terminar de editar solo tienes que presionar en el botón “Guardar” y los cambios estarán hechos.</p>
-            <h2 id="EditMultipleElements">Editar múltiples  elementos</h2>
-            <p>Al igual que existe la función de crear múltiples elementos, también tienes la opción de hacer lo mismo, el cual se accede de una manera diferente a como se editan los elementos normalmente, en este caso, para acceder a el, solo tienes que hacer click derecho sobre el fondo donde están los elementos (como si fueras a crear un elemento o una colección), y apretar la opción “Editar todos los elementos de la colección”, esto te llevara a la ventana para crear múltiples elementos, pero esta vez, para editar los elementos actuales de la colección donde estas parado (Esta función solo sirve para editar elementos, si dentro de la colección existían otras colecciones, no podrán ser editadas aqui). Para terminar, al igual que la función de editar elementos o colecciones, solo tienes que presionar en el botón “Guardar” y los cambios estarán hechos.</p>
-        </section>
-        <!-- Eliminar -->
-        <section class="guideText">
-            <h1 id="Delete">Eliminar</h1>
-            <p>Para eliminar un elemento o una colección basta con hacer click derecho sobre el y hacer click en “Eliminar”, esto, además de eliminar el elemento de manera permanente, también eliminara la caratula que se encuentra dentro de la carpeta “Covers”, y, si estas eliminando una colección, también eliminara los elementos y las colecciones que se encuentren dentro de ella (Cabe aclarar, que eliminar un elemento que hará referencia a un archivo de tu computadora NO lo eliminara, solo eliminara los datos del elemento dentro del software).</p>
-        </section>
-        <!-- Favoritos -->
-        <section class="guideText">
-            <h1 id="Fav">Favoritos</h1>
-            <p>Los elementos o colecciones que tengas como favorito aparecerán dentro de la sección de favoritos al ir a ella utilizando el panel de navegación. Para agregar o quitar un elemento o una colección de favoritos basta con hacer click derecho sobre el y presionar en “Agregar a favoritos” o “Quitar de favoritos” dependiendo de lo que se requiera.</p>
-        </section>
-        <!-- Resoluciones -->
-        <section class="guideText">
-            <h1 id="Resolutions">Resoluciones</h1>
-        </section>
-        <!-- Etiquetas -->
-        <section class="guideText">
-            <h1 id="Tags">Etiquetas</h1>
-        </section>
+        </main>
     </div>
-    
 </body>
 </html>
