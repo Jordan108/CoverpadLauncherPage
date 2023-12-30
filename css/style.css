@@ -261,6 +261,10 @@ nav{
     text-wrap: wrap;
 }
 
+.guideText a, .guideText a:link, .guideText a:visited{
+    color: #a7edf7;
+}
+
 .flexContainer{
     display: flex;
     justify-content: space-between; /* Distribuir los elementos a los extremos */
